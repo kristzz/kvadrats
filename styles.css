@@ -28,7 +28,11 @@ body{
 }
 
 #kubiks{
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
+    left: 5%;
+    top: 5%;
+
+    position: absolute;
     background: red;
 }
