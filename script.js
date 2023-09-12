@@ -13,14 +13,15 @@ btn.addEventListener('click', function(){
 
     let randomX = Math.random() * maxX;
     let randomY = Math.random() * maxY;
-
     let randomRotation = Math.random() * 360;
 
-    let percentX = (randomX / field.clientWidth) * 100 + 1;
-    let percentY = (randomY / field.clientHeight) * 100 + 1;
+    let percentX = (randomX / field.clientWidth) * 100 + 2;
+    let percentY = (randomY / field.clientHeight) * 100 + 2;
 
     kubiks.style.left = percentX + "%";
     kubiks.style.top = percentY + "%";
     kubiks.style.transform = `rotate(${randomRotation}deg)`;
 
+    console.log(percentX);
+    console.log(percentY);
 })
